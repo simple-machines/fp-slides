@@ -5,11 +5,9 @@ all: slides
 clean:
 	rm *.html
 
-part1:
-	$(MD) part1.md -o part1.html
+%.html: %.md
+	$(MD) $< -o $@
 
-part2:
-	$(MD) part2.md -o part2.html
 
-slides: part1 part2
+slides: part1.html part2.html
 
