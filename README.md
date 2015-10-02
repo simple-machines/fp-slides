@@ -2,6 +2,11 @@
 
 Slides generated using https://github.com/partageit/markdown-to-slides:
 
+To install:
+
+```
+npm install markdown-to-slides -g
+```
 
 To build a particular set of slides (say part1):
 
