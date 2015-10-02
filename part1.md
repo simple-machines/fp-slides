@@ -52,9 +52,19 @@ class Animal extends Hashable {
 }
 ```
 
+---
+
+# Ad-hoc polymorphism
+
 Now we can add it to our fancy hash set:
 
 ```scala
+class FancyHashSet[T <: Hashable] {
+  def add(t: T) = ???
+  ...
+}
+
+val set = new FancyHashSet[Animal]
 set.add(new Animal)
 ```
 
