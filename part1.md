@@ -164,4 +164,3 @@ This is cool!!!
 
 Other traits with a single type parameter everywhere!!!
 
-### Next week: the big four!!!
