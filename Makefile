@@ -9,5 +9,4 @@ clean:
 	$(MD) $< -o $@
 
 
-slides: part1.html part2.html
-
+slides: typeclasses.html monoids.html type-tricks.html
