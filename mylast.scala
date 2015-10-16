@@ -114,6 +114,38 @@ object MyLast {
       def apply(in: T :: HNil): T = in.head
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     implicit def moreThanOne[H, T <: HList](implicit next: MyLast[T]): Aux[H :: T, next.Out] = new MyLast[H :: T] {
       type Out = next.Out
       def apply(in: H :: T) = next(in.tail)
